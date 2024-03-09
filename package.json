@@ -1,0 +1,15 @@
+{
+  "name": "wb-project",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

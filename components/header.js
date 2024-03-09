@@ -1,0 +1,21 @@
+document.addEventListener("DOMContentLoaded", function createHeader() {
+  const root = document.getElementById("root");
+  const header = document.createElement("header");
+  header.classList.add("header");
+  root.append(header);
+  const headerContainer = document.createElement("div");
+  headerContainer.classList.add("header-container");
+  header.append(headerContainer);
+  const headerIcon = document.getElementById("header-icon");
+  headerContainer.append(headerIcon);
+  const searchInp = document.createElement("input");
+  searchInp.placeholder = "Найти на Wildberries";
+  searchInp.classList.add("search-inp");
+  headerContainer.append(searchInp);
+  const basketBtn = document.createElement("button");
+  basketBtn.classList.add("basket-btn");
+  basketBtn.textContent = "Корзина";
+  headerContainer.append(basketBtn);
+  const basketImg = document.getElementById("basket-img");
+  basketBtn.append(basketImg);
+});
